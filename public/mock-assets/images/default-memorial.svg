@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">기본 추모 이미지</title>
+  <desc id="desc">고인 사진이 없을 때 사용하는 기본 추모 이미지</desc>
+  <rect width="900" height="1200" fill="#171717"/>
+  <rect x="54" y="54" width="792" height="1092" rx="30" fill="#24221f" stroke="#c9a96e" stroke-width="3"/>
+  <circle cx="450" cy="465" r="172" fill="none" stroke="#c9a96e" stroke-width="5" opacity=".7"/>
+  <path d="M450 292c-42 72-42 145 0 218 42-73 42-146 0-218Z" fill="#f5f0e8" opacity=".84"/>
+  <path d="M310 420c74-24 140 4 198 84-92-10-158-38-198-84Z" fill="#f5f0e8" opacity=".58"/>
+  <path d="M590 420c-74-24-140 4-198 84 92-10 158-38 198-84Z" fill="#f5f0e8" opacity=".58"/>
+  <text x="450" y="820" text-anchor="middle" font-family="serif" font-size="56" fill="#f5f0e8">추모합니다</text>
+  <text x="450" y="884" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#c9a96e">MVP TEST MEMORIAL IMAGE</text>
+</svg>
+

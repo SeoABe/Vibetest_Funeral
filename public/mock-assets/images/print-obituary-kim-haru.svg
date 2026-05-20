@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1528" viewBox="0 0 1080 1528" role="img" aria-labelledby="title desc">
+  <title id="title">김하루 인쇄용 부고 이미지</title>
+  <desc id="desc">인쇄용 부고 이미지 생성 기능 테스트용 SVG</desc>
+  <rect width="1080" height="1528" fill="#f5f0e8"/>
+  <rect x="70" y="70" width="940" height="1388" fill="none" stroke="#24211d" stroke-width="4"/>
+  <text x="540" y="220" text-anchor="middle" font-family="serif" font-size="64" fill="#24211d">부고</text>
+  <line x1="270" y1="270" x2="810" y2="270" stroke="#c9a96e" stroke-width="4"/>
+  <text x="540" y="390" text-anchor="middle" font-family="serif" font-size="58" fill="#24211d">김하루 님</text>
+  <text x="540" y="455" text-anchor="middle" font-family="sans-serif" font-size="30" fill="#5f584d">향년 78세</text>
+  <text x="540" y="560" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#24211d">2026년 5월 18일 영면</text>
+  <text x="540" y="665" text-anchor="middle" font-family="sans-serif" font-size="34" fill="#24211d">빈소</text>
+  <text x="540" y="720" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#5f584d">한빛추모병원 장례식장 2층 목련실</text>
+  <text x="540" y="835" text-anchor="middle" font-family="sans-serif" font-size="34" fill="#24211d">발인</text>
+  <text x="540" y="890" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#5f584d">2026년 5월 21일 오전 7시 30분</text>
+  <text x="540" y="1005" text-anchor="middle" font-family="sans-serif" font-size="34" fill="#24211d">장지</text>
+  <text x="540" y="1060" text-anchor="middle" font-family="sans-serif" font-size="32" fill="#5f584d">평온추모공원</text>
+  <text x="540" y="1210" text-anchor="middle" font-family="sans-serif" font-size="30" fill="#24211d">상주 김도윤 올림</text>
+  <text x="540" y="1330" text-anchor="middle" font-family="sans-serif" font-size="24" fill="#7a7164">MVP 테스트용 가상 부고 이미지</text>
+</svg>
