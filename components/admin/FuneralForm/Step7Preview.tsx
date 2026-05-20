@@ -26,7 +26,7 @@ export default function Step7Preview({ data }: Props) {
   return (
     <div className="flex flex-col gap-5">
       <h2 className="text-lg font-semibold" style={{ color: "var(--text-primary)" }}>
-        7단계 — 최종 미리보기
+        8단계 — 최종 미리보기
       </h2>
 
       {data.deceasedPhoto && (

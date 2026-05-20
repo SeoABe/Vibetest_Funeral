@@ -36,7 +36,12 @@ interface ScheduleRowProps {
 
 function ScheduleRow({ label, children }: ScheduleRowProps) {
   return (
-    <div className="flex gap-4 py-4" style={{ borderBottom: "1px solid var(--border-subtle)" }}>
+    <div className="relative flex gap-4 py-4 pl-4" style={{ borderBottom: "1px solid var(--border-subtle)" }}>
+      <span
+        className="absolute left-0 top-5 h-2 w-2 rounded-full"
+        style={{ backgroundColor: "var(--accent)", boxShadow: "0 0 0 4px var(--accent-soft)" }}
+        aria-hidden
+      />
       <span
         className="text-sm w-16 shrink-0 mt-0.5"
         style={{ color: "var(--accent)" }}
@@ -55,15 +60,14 @@ export default function FuneralSchedule({ shroudingAt, visitation, processionAt,
   if (!hasAny) return null
 
   return (
-    <section id="schedule" className="px-5 py-6" style={{ borderTop: "1px solid var(--border)" }}>
+    <section id="schedule" className="memorial-section px-5 py-6">
       <h2
-        className="text-lg font-semibold mb-2"
-        style={{ color: "var(--accent)", fontFamily: "var(--font-serif)" }}
+        className="memorial-heading text-lg font-semibold mb-3"
       >
         장례 일정
       </h2>
 
-      <div>
+      <div className="memorial-card rounded-lg px-4">
         {shroudingAt && (
           <ScheduleRow label="입관">
             {fmt(shroudingAt)}

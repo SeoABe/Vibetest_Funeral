@@ -75,11 +75,10 @@ export default function LocationMap({ lat, lng, funeralHome, funeralHall, funera
   const tmapUrl = `https://tmap.life/?lat=${lat}&lng=${lng}&name=${encodeURIComponent(funeralHome)}`
 
   return (
-    <section id="location" className="py-6" style={{ borderTop: "1px solid var(--border)" }}>
+    <section id="location" className="memorial-section py-6">
       <div className="px-5 mb-3">
         <h2
-          className="text-lg font-semibold mb-1"
-          style={{ color: "var(--accent)", fontFamily: "var(--font-serif)" }}
+          className="memorial-heading text-lg font-semibold mb-3"
         >
           장례식장 위치
         </h2>
@@ -90,7 +89,7 @@ export default function LocationMap({ lat, lng, funeralHome, funeralHall, funera
       </div>
 
       {/* 지도 */}
-      <div style={{ position: "relative", width: "100%", height: "220px", backgroundColor: "#1e1e1e" }}>
+      <div className="mx-5 overflow-hidden rounded-lg memorial-card" style={{ position: "relative", height: "220px" }}>
         <div ref={mapRef} style={{ width: "100%", height: "100%" }} />
         {/* 폴백: 지도 미로드 시 주소 표시 */}
         <div

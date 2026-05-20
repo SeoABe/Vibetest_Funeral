@@ -5,7 +5,7 @@ interface Props {
 
 export default function DeceasedLetterSection({ name, letter }: Props) {
   return (
-    <section className="px-5 py-6">
+    <section className="memorial-section px-5 py-6">
       {/* 헤더 */}
       <div className="flex items-center gap-2 mb-4">
         <div className="w-px h-4 rounded-full" style={{ backgroundColor: "var(--accent)" }} />
@@ -16,8 +16,7 @@ export default function DeceasedLetterSection({ name, letter }: Props) {
 
       {/* 편지 카드 */}
       <div
-        className="relative rounded-2xl px-6 py-6 overflow-hidden"
-        style={{ backgroundColor: "var(--bg-secondary)", border: "1px solid var(--border)" }}
+        className="memorial-card relative rounded-lg px-6 py-6 overflow-hidden"
       >
         {/* 장식 따옴표 */}
         <span
@@ -25,7 +24,7 @@ export default function DeceasedLetterSection({ name, letter }: Props) {
           style={{ color: "var(--border)", fontFamily: "Georgia, serif" }}
           aria-hidden
         >
-          "
+          &quot;
         </span>
 
         {/* 편지 본문 */}

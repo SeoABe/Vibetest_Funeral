@@ -87,11 +87,10 @@ export default function GuestbookSection({
   }
 
   return (
-    <section id="guestbook" className="py-6" style={{ borderTop: "1px solid var(--border)" }}>
+    <section id="guestbook" className="memorial-section py-6">
       <div className="px-5 mb-4">
         <h2
-          className="text-lg font-semibold"
-          style={{ color: "var(--accent)", fontFamily: "var(--font-serif)" }}
+          className="memorial-heading text-lg font-semibold"
         >
           방명록
         </h2>
@@ -158,7 +157,7 @@ export default function GuestbookSection({
           <button
             type="submit"
             disabled={submitting || !authorName.trim() || !message.trim()}
-            className="w-full py-3 rounded-xl text-sm font-medium transition-colors min-h-[44px]"
+            className="memorial-button w-full py-3 rounded-xl text-sm font-medium transition-colors min-h-[44px]"
             style={{
               backgroundColor: "var(--accent)",
               color: "var(--bg-primary)",

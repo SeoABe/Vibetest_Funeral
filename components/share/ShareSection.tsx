@@ -31,10 +31,9 @@ export default function ShareSection({ title, description, funeralSlug, deceased
   }
 
   return (
-    <section className="px-5 py-6" style={{ borderTop: "1px solid var(--border)" }}>
+    <section className="memorial-section px-5 py-6">
       <h2
-        className="text-lg font-semibold mb-4"
-        style={{ color: "var(--accent)", fontFamily: "var(--font-serif)" }}
+        className="memorial-heading text-lg font-semibold mb-4"
       >
         공유하기
       </h2>

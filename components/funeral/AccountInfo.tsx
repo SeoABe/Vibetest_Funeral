@@ -31,10 +31,7 @@ function AccountCard({ account }: { account: Account }) {
   }
 
   return (
-    <div
-      className="rounded-xl p-4"
-      style={{ backgroundColor: "var(--bg-secondary)", border: "1px solid var(--border)" }}
-    >
+    <div className="memorial-card rounded-lg p-4">
       <div className="flex items-center justify-between mb-2">
         <div>
           <span className="text-sm font-medium" style={{ color: "var(--text-primary)" }}>
@@ -59,7 +56,7 @@ function AccountCard({ account }: { account: Account }) {
           </span>
           <button
             onClick={copyAccount}
-            className="px-3 py-1.5 rounded-lg text-sm transition-colors min-h-[36px]"
+            className="memorial-button px-3 py-1.5 rounded-lg text-sm transition-colors min-h-[36px]"
             style={{
               backgroundColor: copied ? "var(--bg-elevated)" : "var(--accent)",
               color: copied ? "var(--accent)" : "#1a1a1a",
@@ -90,10 +87,9 @@ export default function AccountInfo({ accounts }: Props) {
   if (validAccounts.length === 0) return null
 
   return (
-    <section id="accounts" className="px-5 py-6" style={{ borderTop: "1px solid var(--border)" }}>
+    <section id="accounts" className="memorial-section px-5 py-6">
       <h2
-        className="text-lg font-semibold mb-4"
-        style={{ color: "var(--accent)", fontFamily: "var(--font-serif)" }}
+        className="memorial-heading text-lg font-semibold mb-4"
       >
         조의금 계좌
       </h2>

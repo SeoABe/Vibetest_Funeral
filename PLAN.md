@@ -41,7 +41,7 @@ funeral-app/
 │   ├── admin/
 │   │   ├── login/page.tsx
 │   │   ├── dashboard/page.tsx           # 부고 목록 + 승인 대기 현황
-│   │   ├── create/page.tsx              # 부고 생성 (7단계 멀티스텝 폼)
+│   │   ├── create/page.tsx              # 부고 생성 (8단계 멀티스텝 폼)
 │   │   └── [id]/
 │   │       ├── edit/page.tsx            # 부고 수정
 │   │       └── guestbook/page.tsx       # 방명록 관리
@@ -68,7 +68,7 @@ funeral-app/
 │   │   ├── KakaoShareButton.tsx         # 카카오톡 공유 버튼
 │   │   └── QRCodeButton.tsx             # QR코드 표시
 │   └── admin/
-│       ├── FuneralForm/                 # 7단계 멀티스텝 폼
+│       ├── FuneralForm/                 # 8단계 멀티스텝 폼
 │       │   ├── Step1Deceased.tsx
 │       │   ├── Step2Family.tsx
 │       │   ├── Step3Schedule.tsx
@@ -229,14 +229,14 @@ model Guestbook {
 
 - NextAuth 세션 기반 인증 (이메일/패스워드)
 - 부고 목록: 공개 상태, 만료일, 승인 대기 방명록 수 표시
-- 부고 생성/수정: 7단계 멀티스텝 폼 + 미리보기
+- 부고 생성/수정: 8단계 멀티스텝 폼 + 미리보기
 - 방명록: 승인 대기 / 승인 / 삭제 후보 상태별 관리
 - 가족에게 남긴 글 내용 등록 및 비밀번호 설정
 - 관리자 작업 실패 시 재시도 안내
 
 ---
 
-## 관리자 부고 생성 폼 — 7단계
+## 관리자 부고 생성 폼 — 8단계
 
 | 단계 | 내용 |
 |---|---|
@@ -260,7 +260,7 @@ model Guestbook {
 - [ ] fixtures 데이터 seed 스크립트
 
 ### Phase 2 — 관리자 폼 + 장례식장 검색 (2~3일)
-- [ ] 7단계 멀티스텝 폼 구현
+- [ ] 8단계 멀티스텝 폼 구현
 - [ ] 카카오 주소검색 API 연동 (`lib/kakao-address.ts`)
 - [ ] 부고 생성/수정 API (`/api/funeral`)
 - [ ] 작성 중 미리보기 UI

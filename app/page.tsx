@@ -46,13 +46,13 @@ export default function Home() {
 
       {/* 버튼 영역 */}
       <div className="w-full max-w-md flex flex-col gap-3">
-        <a
+        <Link
           href="/kim-haru-2026"
           className="flex items-center justify-center gap-2 w-full py-4 rounded-2xl text-base font-medium transition-opacity hover:opacity-80 min-h-[52px]"
           style={{ backgroundColor: "var(--accent)", color: "#fff" }}
         >
           샘플 부고 페이지 보기
-        </a>
+        </Link>
         <Link
           href="/admin/login"
           className="flex items-center justify-center gap-2 w-full py-4 rounded-2xl text-base font-medium transition-opacity hover:opacity-80 min-h-[52px]"

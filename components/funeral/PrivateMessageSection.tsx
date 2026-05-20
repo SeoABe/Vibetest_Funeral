@@ -38,7 +38,7 @@ export default function PrivateMessageSection({ funeralId, label }: Props) {
   }
 
   return (
-    <section className="px-5 py-6" style={{ borderTop: "1px solid var(--border)" }}>
+    <section className="memorial-section px-5 py-6">
       <h2
         className="text-lg font-semibold mb-1"
         style={{ color: "var(--accent)", fontFamily: "var(--font-serif)" }}

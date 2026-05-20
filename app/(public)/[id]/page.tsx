@@ -12,10 +12,17 @@ import ShareSection from "@/components/share/ShareSection"
 import GuestbookSection from "@/components/funeral/GuestbookSection"
 import PrivateMessageSection from "@/components/funeral/PrivateMessageSection"
 import DeceasedLetterSection from "@/components/funeral/DeceasedLetterSection"
+import FictionalNoticeModal from "@/components/funeral/FictionalNoticeModal"
 
 export const revalidate = 60
 
 type Props = { params: Promise<{ id: string }> }
+
+function normalizeDeceasedPhoto(photo: string | null) {
+  return photo
+    ?.replace("/mock-assets/images/deceased-kim-haru.svg", "/mock-assets/images/deceased-kim-haru.png")
+    .replace("/mock-assets/images/deceased-lee-jungmin.svg", "/mock-assets/images/deceased-lee-jungmin.png") ?? null
+}
 
 async function getBaseUrl() {
   const hdrs = await headers()
@@ -76,12 +83,15 @@ export default async function FuneralPage({ params }: Props) {
   const visitation = funeral.visitation as {
     startsAt?: string; endsAt?: string; note?: string
   } | null
+  const deceasedPhoto = normalizeDeceasedPhoto(funeral.deceasedPhoto)
 
   return (
-    <div className="pb-24">
+    <div className="memorial-page pb-24">
+      <FictionalNoticeModal />
+
       <HeroSection
         name={funeral.deceasedName}
-        photo={funeral.deceasedPhoto}
+        photo={deceasedPhoto}
         birthDate={funeral.birthDate}
         deathDate={funeral.deathDate}
         ageText={funeral.ageText}
@@ -92,7 +102,7 @@ export default async function FuneralPage({ params }: Props) {
       />
 
       {funeral.obituaryText && (
-        <section className="px-5 py-6" style={{ borderTop: "1px solid var(--border)" }}>
+        <section className="memorial-section px-5 py-6">
           <p
             className="text-base leading-relaxed whitespace-pre-wrap"
             style={{ color: "var(--text-secondary)" }}
@@ -125,7 +135,7 @@ export default async function FuneralPage({ params }: Props) {
         title={`${funeral.deceasedName} 님의 부고`}
         description={`${funeral.funeralHome}${funeral.funeralHall ? ` ${funeral.funeralHall}` : ""}${funeral.processionAt ? ` · 발인 ${new Date(funeral.processionAt).toLocaleDateString("ko-KR", { month: "long", day: "numeric" })}` : ""}`}
         funeralSlug={funeral.slug}
-        deceasedPhoto={funeral.deceasedPhoto}
+        deceasedPhoto={deceasedPhoto}
       />
 
       {funeral.privateMessageContent && (

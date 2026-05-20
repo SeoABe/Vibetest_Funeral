@@ -4,16 +4,16 @@
     {
       "id": "deceased_kim_haru",
       "type": "deceasedPortrait",
-      "path": "/mock-assets/images/deceased-kim-haru.svg",
-      "source": "fictional-svg-placeholder",
-      "description": "김하루 부고 테스트용 비실사 추모 이미지"
+      "path": "/mock-assets/images/deceased-kim-haru.png",
+      "source": "ai-generated-fictional-portrait",
+      "description": "김하루 부고 테스트용 생성형 AI 허구 인물 추모 이미지"
     },
     {
       "id": "deceased_lee_jungmin",
       "type": "deceasedPortrait",
-      "path": "/mock-assets/images/deceased-lee-jungmin.svg",
-      "source": "fictional-svg-placeholder",
-      "description": "이정민 부고 테스트용 비실사 추모 이미지"
+      "path": "/mock-assets/images/deceased-lee-jungmin.png",
+      "source": "ai-generated-fictional-portrait",
+      "description": "이정민 부고 테스트용 생성형 AI 허구 인물 추모 이미지"
     },
     {
       "id": "default_memorial",
@@ -52,4 +52,3 @@
     }
   ]
 }
-

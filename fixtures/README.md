@@ -15,8 +15,8 @@ fixtures/
 │   └── user-scenarios.md
 └── assets/
     └── images/
-        ├── deceased-kim-haru.svg
-        ├── deceased-lee-jungmin.svg
+        ├── deceased-kim-haru.png
+        ├── deceased-lee-jungmin.png
         ├── default-memorial.svg
         ├── funeral-home-map-placeholder.svg
         ├── og-kim-haru.svg
@@ -41,4 +41,3 @@ fixtures/
 ## 테스트 계정
 
 관리자 계정은 `fixtures/data/admins.seed.json`에 있다. 비밀번호는 실제 운영에 사용하면 안 된다.
-

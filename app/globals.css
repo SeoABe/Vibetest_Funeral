@@ -2,16 +2,18 @@
 
 :root {
   /* 부고 서비스 색상 시스템 */
-  --bg-primary: #1a1a1a;       /* 짙은 회색 배경 */
-  --bg-secondary: #242424;     /* 카드 배경 */
-  --bg-elevated: #2e2e2e;      /* 강조 카드 배경 */
-  --text-primary: #f5f0e8;     /* 아이보리 본문 */
-  --text-secondary: #c8bfb0;   /* 연한 아이보리 보조 */
-  --text-muted: #8a8070;       /* 흐린 텍스트 */
-  --accent: #c9a96e;           /* 골드 포인트 */
-  --accent-hover: #dbbf87;     /* 골드 hover */
-  --border: #3a3530;           /* 구분선 */
-  --border-subtle: #2a2520;    /* 연한 구분선 */
+  --bg-primary: #141312;       /* 짙은 회색 배경 */
+  --bg-secondary: #201f1d;     /* 카드 배경 */
+  --bg-elevated: #2a2824;      /* 강조 카드 배경 */
+  --text-primary: #f6efe4;     /* 아이보리 본문 */
+  --text-secondary: #cfc3b2;   /* 연한 아이보리 보조 */
+  --text-muted: #948776;       /* 흐린 텍스트 */
+  --accent: #caa86b;           /* 골드 포인트 */
+  --accent-hover: #dcc085;     /* 골드 hover */
+  --accent-soft: rgba(202, 168, 107, 0.16);
+  --border: #433a2d;           /* 구분선 */
+  --border-subtle: #302a22;    /* 연한 구분선 */
+  --candle: rgba(226, 168, 92, 0.18);
 }
 
 @theme inline {
@@ -39,7 +41,9 @@ html {
 }
 
 body {
-  background-color: var(--bg-primary);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(202, 168, 107, 0.08), transparent 34rem),
+    linear-gradient(180deg, #100f0e 0%, #181614 48%, #100f0e 100%);
   color: var(--text-primary);
   font-family: var(--font-sans), "Noto Sans KR", sans-serif;
   min-height: 100dvh;
@@ -48,16 +52,88 @@ body {
 
 /* 부고 공개 페이지 래퍼 — 모바일 카드 중앙 정렬 */
 .funeral-container {
+  position: relative;
   max-width: 480px;
   margin: 0 auto;
   min-height: 100dvh;
-  background-color: var(--bg-primary);
+  background:
+    radial-gradient(circle at 50% 6rem, var(--candle), transparent 13rem),
+    radial-gradient(circle at 12% 22rem, rgba(202, 168, 107, 0.06), transparent 11rem),
+    linear-gradient(180deg, rgba(255,255,255,0.025), transparent 13rem),
+    var(--bg-primary);
+  box-shadow: 0 0 0 1px rgba(202, 168, 107, 0.08), 0 28px 80px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.funeral-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.25;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,0.045) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+  background-size: 23px 23px, 29px 29px;
+  mix-blend-mode: soft-light;
+}
+
+.memorial-page {
+  position: relative;
+  z-index: 1;
 }
 
 /* 섹션 구분선 */
 .section-divider {
   border-top: 1px solid var(--border);
   margin: 0;
+}
+
+.memorial-section {
+  position: relative;
+  border-top: 1px solid var(--border);
+}
+
+.memorial-section::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: -1px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(202, 168, 107, 0.58), transparent);
+}
+
+.memorial-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--accent);
+  font-family: var(--font-serif);
+}
+
+.memorial-heading::before,
+.memorial-heading::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(90deg, transparent, rgba(202, 168, 107, 0.45));
+}
+
+.memorial-heading::after {
+  background: linear-gradient(90deg, rgba(202, 168, 107, 0.45), transparent);
+}
+
+.memorial-card {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.035), transparent),
+    var(--bg-secondary);
+  border: 1px solid var(--border);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.035), 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.memorial-button {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
 }
 
 /* 접근성: 포커스 링 */

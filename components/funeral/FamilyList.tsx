@@ -13,16 +13,15 @@ export default function FamilyList({ chiefMourner, familyList }: Props) {
   if (members.length === 0) return null
 
   return (
-    <section id="family" className="px-5 py-6" style={{ borderTop: "1px solid var(--border)" }}>
+    <section id="family" className="memorial-section px-5 py-6">
       <h2
-        className="text-lg font-semibold mb-4"
-        style={{ color: "var(--accent)", fontFamily: "var(--font-serif)" }}
+        className="memorial-heading text-lg font-semibold mb-4"
       >
         상주
       </h2>
-      <ul className="flex flex-col gap-2">
+      <ul className="memorial-card rounded-lg px-4 py-3 flex flex-col gap-1">
         {members.map((m, i) => (
-          <li key={i} className="flex items-center gap-3">
+          <li key={i} className="flex items-center gap-3 py-2">
             <span
               className="text-sm w-16 shrink-0"
               style={{ color: "var(--text-muted)" }}

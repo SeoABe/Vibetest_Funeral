@@ -9,5 +9,6 @@
   <path d="M590 420c-74-24-140 4-198 84 92-10 158-38 198-84Z" fill="#f5f0e8" opacity=".58"/>
   <text x="450" y="820" text-anchor="middle" font-family="serif" font-size="56" fill="#f5f0e8">추모합니다</text>
   <text x="450" y="884" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#c9a96e">MVP TEST MEMORIAL IMAGE</text>
+  <rect x="170" y="1108" width="560" height="44" rx="22" fill="#171717" opacity=".72"/>
+  <text x="450" y="1137" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#c8bfb0">생성형 AI로 만들어진 이미지 입니다.</text>
 </svg>
-

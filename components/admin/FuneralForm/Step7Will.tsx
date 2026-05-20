@@ -71,7 +71,7 @@ export default function Step7Will({ data, onChange }: Props) {
             style={{ color: "var(--border)", fontFamily: "Georgia, serif" }}
             aria-hidden
           >
-            "
+            &quot;
           </span>
           {data.deceasedLetter.split("\n").map((line, i) =>
             line.trim() === "" ? (

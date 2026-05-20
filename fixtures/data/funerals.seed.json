@@ -7,7 +7,7 @@
     "publishedAt": "2026-05-19T09:00:00+09:00",
     "expiresAt": "2026-06-19T23:59:59+09:00",
     "deceasedName": "김하루",
-    "deceasedPhoto": "/mock-assets/images/deceased-kim-haru.svg",
+    "deceasedPhoto": "/mock-assets/images/deceased-kim-haru.png",
     "birthDate": "1948-03-12",
     "deathDate": "2026-05-18T22:40:00+09:00",
     "ageText": "향년 78세",
@@ -83,7 +83,7 @@
     "publishedAt": null,
     "expiresAt": "2026-06-30T23:59:59+09:00",
     "deceasedName": "이정민",
-    "deceasedPhoto": "/mock-assets/images/deceased-lee-jungmin.svg",
+    "deceasedPhoto": "/mock-assets/images/deceased-lee-jungmin.png",
     "birthDate": "1955-10-04",
     "deathDate": "2026-05-17T05:20:00+09:00",
     "ageText": "향년 70세",
@@ -139,4 +139,3 @@
     "updatedAt": "2026-05-19T10:20:00+09:00"
   }
 ]
-
