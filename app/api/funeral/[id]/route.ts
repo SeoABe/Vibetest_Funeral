@@ -28,7 +28,7 @@ export async function PATCH(req: NextRequest, { params }: { params: Promise<{ id
     "funeralAddress", "funeralLat", "funeralLng", "visitation",
     "burialPlace", "accounts", "guestbookRequiresApproval",
     "guestbookMaxLength", "guestbookAllowAnonymous",
-    "privateMessageLabel", "isPublished", "expiresAt",
+    "privateMessageLabel", "deceasedLetter", "isPublished", "expiresAt",
   ]
   for (const f of fields) {
     if (f in body) data[f] = body[f]

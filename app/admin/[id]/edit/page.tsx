@@ -45,6 +45,7 @@ export default async function EditPage({ params }: { params: Promise<{ id: strin
     guestbookAllowAnonymous: funeral.guestbookAllowAnonymous,
     isPublished: funeral.isPublished,
     expiresAt: toDateStr(funeral.expiresAt),
+    deceasedLetter: funeral.deceasedLetter ?? "",
   }
 
   return (

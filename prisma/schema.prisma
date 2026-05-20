@@ -43,6 +43,9 @@ model Funeral {
   guestbookMaxLength        Int     @default(300)
   guestbookAllowAnonymous   Boolean @default(true)
 
+  // 고인이 남긴 편지 (방문자 공개)
+  deceasedLetter String?
+
   // 가족에게 남긴 글 (비공개 추모글)
   privateMessageContent  String? // AES-256-GCM 암호화
   privateMessagePassword String? // bcrypt 해시

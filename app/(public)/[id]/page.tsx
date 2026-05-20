@@ -11,6 +11,7 @@ import StickyActionBar from "@/components/funeral/StickyActionBar"
 import ShareSection from "@/components/share/ShareSection"
 import GuestbookSection from "@/components/funeral/GuestbookSection"
 import PrivateMessageSection from "@/components/funeral/PrivateMessageSection"
+import DeceasedLetterSection from "@/components/funeral/DeceasedLetterSection"
 
 export const revalidate = 60
 
@@ -131,6 +132,13 @@ export default async function FuneralPage({ params }: Props) {
         <PrivateMessageSection
           funeralId={funeral.id}
           label={funeral.privateMessageLabel ?? "가족에게 남긴 글"}
+        />
+      )}
+
+      {funeral.deceasedLetter && (
+        <DeceasedLetterSection
+          name={funeral.deceasedName}
+          letter={funeral.deceasedLetter}
         />
       )}
 

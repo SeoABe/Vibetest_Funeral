@@ -50,7 +50,8 @@ export interface FuneralFormData {
   isPublished: boolean
   expiresAt: string
 
-  // Step 7 — (미리보기 전용, 별도 입력 없음)
+  // Step 7 — 유언장
+  deceasedLetter: string
 }
 
 export const defaultFormData: FuneralFormData = {
@@ -79,4 +80,5 @@ export const defaultFormData: FuneralFormData = {
   guestbookAllowAnonymous: true,
   isPublished: false,
   expiresAt: "",
+  deceasedLetter: "",
 }

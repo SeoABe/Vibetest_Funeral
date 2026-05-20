@@ -9,9 +9,10 @@ import Step3Schedule from "./Step3Schedule"
 import Step4Location from "./Step4Location"
 import Step5Accounts from "./Step5Accounts"
 import Step6Settings from "./Step6Settings"
-import Step7Preview from "./Step7Preview"
+import Step7Will from "./Step7Will"
+import Step8Preview from "./Step7Preview"
 
-const STEPS = ["고인 정보", "상주/가족", "장례 일정", "장례식장", "조의금 계좌", "공개 설정", "최종 확인"]
+const STEPS = ["고인 정보", "상주/가족", "장례 일정", "장례식장", "조의금 계좌", "공개 설정", "유언장", "최종 확인"]
 
 interface Props {
   initialData?: Partial<FuneralFormData>
@@ -63,6 +64,7 @@ export default function FuneralForm({ initialData, funeralId }: Props) {
       guestbookAllowAnonymous: data.guestbookAllowAnonymous,
       isPublished: data.isPublished,
       expiresAt: data.expiresAt || null,
+      deceasedLetter: data.deceasedLetter || null,
     }
   }
 
@@ -117,7 +119,8 @@ export default function FuneralForm({ initialData, funeralId }: Props) {
         {step === 3 && <Step4Location {...stepProps} />}
         {step === 4 && <Step5Accounts {...stepProps} />}
         {step === 5 && <Step6Settings {...stepProps} />}
-        {step === 6 && <Step7Preview data={data} />}
+        {step === 6 && <Step7Will {...stepProps} />}
+        {step === 7 && <Step8Preview data={data} />}
       </div>
 
       {error && (

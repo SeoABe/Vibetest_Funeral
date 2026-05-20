@@ -43,6 +43,7 @@ async function main() {
         guestbookRequiresApproval: f.guestbookPolicy?.requiresApproval ?? true,
         guestbookMaxLength: f.guestbookPolicy?.maxMessageLength ?? 300,
         guestbookAllowAnonymous: f.guestbookPolicy?.allowAnonymous ?? true,
+        deceasedLetter: (f as { deceasedLetter?: string }).deceasedLetter ?? null,
         privateMessageContent: f.privateMessage?.content
           ? encrypt(f.privateMessage.content)
           : null,

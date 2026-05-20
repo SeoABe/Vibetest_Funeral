@@ -51,6 +51,7 @@ export async function POST(req: NextRequest) {
       guestbookMaxLength: body.guestbookMaxLength ?? 300,
       guestbookAllowAnonymous: body.guestbookAllowAnonymous ?? true,
       privateMessageLabel: body.privateMessageLabel ?? null,
+      deceasedLetter: body.deceasedLetter ?? null,
       isPublished: body.isPublished ?? false,
       expiresAt: body.expiresAt ? new Date(body.expiresAt) : null,
     },
