@@ -53,18 +53,10 @@ export default function HeroSection({
           className="w-full h-full object-cover"
           style={{ opacity: 0.75 }}
         />
-        {/* 하단 그라데이션 */}
-        <div
-          className="absolute inset-x-0 bottom-0"
-          style={{
-            height: "60%",
-            background: "linear-gradient(to top, var(--bg-primary) 0%, transparent 100%)",
-          }}
-        />
       </div>
 
       {/* 이름 + 생몰 + 요약 */}
-      <div className="px-5 pb-6" style={{ marginTop: "-4rem" }}>
+      <div className="px-5 pb-6 pt-5">
         {/* 이름 */}
         <h1
           className="text-4xl font-semibold mb-2 relative z-10"
