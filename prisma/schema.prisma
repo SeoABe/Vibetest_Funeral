@@ -1,0 +1,75 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Funeral {
+  id    String @id @default(cuid())
+  slug  String @unique
+
+  // 고인 정보
+  deceasedName  String
+  deceasedPhoto String?
+  birthDate     DateTime?
+  deathDate     DateTime
+  ageText       String?
+
+  // 상주/가족
+  chiefMourner String
+  familyList   Json     // { relation: string, name: string }[]
+  obituaryText String?
+
+  // 장례 일정
+  funeralHome    String
+  funeralHall    String?
+  funeralAddress String
+  funeralLat     Float
+  funeralLng     Float
+  shroudingAt    DateTime?
+  visitation     Json?    // { startsAt, endsAt, note }
+  processionAt   DateTime?
+  burialPlace    String?
+
+  // 조의금 계좌
+  // { id, bank, holder, number, relation, displayMode: "tapToReveal" | "visible" }[]
+  accounts Json
+
+  // 방명록 정책
+  guestbookRequiresApproval Boolean @default(true)
+  guestbookMaxLength        Int     @default(300)
+  guestbookAllowAnonymous   Boolean @default(true)
+
+  // 가족에게 남긴 글 (비공개 추모글)
+  privateMessageContent  String? // AES-256-GCM 암호화
+  privateMessagePassword String? // bcrypt 해시
+  privateMessageLabel    String? // 기본값: "가족에게 남긴 글"
+
+  // 공개 설정
+  isPublished Boolean   @default(false)
+  publishedAt DateTime?
+  expiresAt   DateTime?
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  guestbook Guestbook[]
+}
+
+model Guestbook {
+  id         String   @id @default(cuid())
+  funeralId  String
+  funeral    Funeral  @relation(fields: [funeralId], references: [id], onDelete: Cascade)
+  authorName String
+  message    String
+  // pending | approved | deleted
+  status     String   @default("pending")
+  isApproved Boolean  @default(false)
+  approvedAt DateTime?
+  createdAt  DateTime @default(now())
+
+  @@index([funeralId, status])
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">김하루 부고 OG 이미지</title>
+  <desc id="desc">카카오톡 공유 미리보기 테스트용 부고 이미지</desc>
+  <rect width="1200" height="630" fill="#171717"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="#24211d" stroke="#c9a96e" stroke-width="3"/>
+  <circle cx="265" cy="315" r="128" fill="#3b3832"/>
+  <circle cx="265" cy="270" r="62" fill="#d8c8ad"/>
+  <path d="M160 442c22-86 76-136 105-136s83 50 105 136" fill="#d8c8ad"/>
+  <text x="480" y="210" font-family="serif" font-size="58" fill="#f5f0e8">김하루 님 부고</text>
+  <text x="480" y="292" font-family="sans-serif" font-size="34" fill="#c9a96e">발인 2026년 5월 21일 07:30</text>
+  <text x="480" y="354" font-family="sans-serif" font-size="34" fill="#f5f0e8">한빛추모병원 장례식장 2층 목련실</text>
+  <text x="480" y="440" font-family="sans-serif" font-size="28" fill="#bdb7aa">삼가 고인의 명복을 빕니다</text>
+</svg>
+

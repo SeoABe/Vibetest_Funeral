@@ -1,0 +1,50 @@
+[
+  {
+    "id": "guestbook_kim_001",
+    "funeralId": "funeral_kim_haru_001",
+    "authorName": "박서연",
+    "message": "삼가 고인의 명복을 빕니다. 따뜻했던 마음 오래 기억하겠습니다.",
+    "isApproved": false,
+    "status": "pending",
+    "createdAt": "2026-05-19T12:15:00+09:00"
+  },
+  {
+    "id": "guestbook_kim_002",
+    "funeralId": "funeral_kim_haru_001",
+    "authorName": "정우성",
+    "message": "깊은 애도의 마음을 전합니다. 가족분들께도 위로의 말씀을 드립니다.",
+    "isApproved": true,
+    "status": "approved",
+    "createdAt": "2026-05-19T13:05:00+09:00",
+    "approvedAt": "2026-05-19T13:20:00+09:00"
+  },
+  {
+    "id": "guestbook_kim_003",
+    "funeralId": "funeral_kim_haru_001",
+    "authorName": "익명",
+    "message": "마음 깊이 추모합니다. 편히 쉬시길 바랍니다.",
+    "isApproved": true,
+    "status": "approved",
+    "createdAt": "2026-05-19T13:40:00+09:00",
+    "approvedAt": "2026-05-19T13:55:00+09:00"
+  },
+  {
+    "id": "guestbook_kim_004",
+    "funeralId": "funeral_kim_haru_001",
+    "authorName": "테스트삭제",
+    "message": "관리자 삭제 플로우 확인용 메시지입니다.",
+    "isApproved": false,
+    "status": "delete_candidate",
+    "createdAt": "2026-05-19T14:10:00+09:00"
+  },
+  {
+    "id": "guestbook_lee_001",
+    "funeralId": "funeral_lee_jungmin_001",
+    "authorName": "문가람",
+    "message": "비공개 부고에서는 외부 조문객에게 노출되지 않아야 하는 테스트 메시지입니다.",
+    "isApproved": false,
+    "status": "pending",
+    "createdAt": "2026-05-19T14:30:00+09:00"
+  }
+]
+

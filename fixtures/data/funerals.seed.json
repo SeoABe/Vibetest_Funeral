@@ -1,0 +1,141 @@
+[
+  {
+    "id": "funeral_kim_haru_001",
+    "slug": "kim-haru-2026",
+    "status": "published",
+    "isPublished": true,
+    "publishedAt": "2026-05-19T09:00:00+09:00",
+    "expiresAt": "2026-06-19T23:59:59+09:00",
+    "deceasedName": "김하루",
+    "deceasedPhoto": "/mock-assets/images/deceased-kim-haru.svg",
+    "birthDate": "1948-03-12",
+    "deathDate": "2026-05-18T22:40:00+09:00",
+    "ageText": "향년 78세",
+    "chiefMourner": "김도윤",
+    "familyList": [
+      { "relation": "배우자", "name": "윤미경" },
+      { "relation": "아들", "name": "김도윤" },
+      { "relation": "며느리", "name": "한서희" },
+      { "relation": "딸", "name": "김다은" },
+      { "relation": "사위", "name": "오현우" },
+      { "relation": "손자", "name": "김민재" },
+      { "relation": "손녀", "name": "오나린" }
+    ],
+    "obituaryText": "저희 가족의 소중한 김하루 님께서 2026년 5월 18일 평온히 영면에 드셨기에 삼가 알려드립니다. 따뜻한 위로와 마음을 전해주시는 모든 분께 깊이 감사드립니다.",
+    "funeralHome": "한빛추모병원 장례식장",
+    "funeralHall": "2층 목련실",
+    "funeralAddress": "서울특별시 중구 한빛로 24",
+    "funeralLat": 37.564213,
+    "funeralLng": 126.992351,
+    "shroudingAt": "2026-05-20T11:00:00+09:00",
+    "visitation": {
+      "startsAt": "2026-05-19T10:00:00+09:00",
+      "endsAt": "2026-05-21T07:00:00+09:00",
+      "note": "조문은 5월 19일 오전 10시부터 가능합니다."
+    },
+    "processionAt": "2026-05-21T07:30:00+09:00",
+    "burialPlace": "평온추모공원",
+    "accounts": [
+      {
+        "id": "acct_kim_001",
+        "bank": "테스트은행",
+        "holder": "김도윤",
+        "number": "000-0427-2026-01",
+        "relation": "아들",
+        "displayMode": "tapToReveal"
+      },
+      {
+        "id": "acct_kim_002",
+        "bank": "샘플은행",
+        "holder": "윤미경",
+        "number": "000-1948-0312-02",
+        "relation": "배우자",
+        "displayMode": "tapToReveal"
+      }
+    ],
+    "guestbookPolicy": {
+      "requiresApproval": true,
+      "maxMessageLength": 300,
+      "allowAnonymous": true
+    },
+    "privateMessage": {
+      "label": "가족에게 남긴 글",
+      "plainPasswordForLocalTest": "haru-family-0427",
+      "passwordHashPlaceholder": "$2b$12$replace.with.real.hash.before.runtime",
+      "content": "사랑하는 가족들에게. 서로의 안부를 자주 묻고, 미안한 말은 오래 미루지 않았으면 합니다. 내가 남긴 것은 거창한 말보다 함께 먹던 밥상과 웃음이었으면 좋겠습니다. 각자의 자리에서 건강히 지내주세요.",
+      "encryptedContentPlaceholder": "replace-with-aes-gcm-ciphertext"
+    },
+    "share": {
+      "title": "김하루 님 부고",
+      "description": "발인 2026년 5월 21일 07:30, 한빛추모병원 장례식장",
+      "ogImage": "/mock-assets/images/og-kim-haru.svg"
+    },
+    "printImage": "/mock-assets/images/print-obituary-kim-haru.svg",
+    "createdAt": "2026-05-19T08:30:00+09:00",
+    "updatedAt": "2026-05-19T09:00:00+09:00"
+  },
+  {
+    "id": "funeral_lee_jungmin_001",
+    "slug": "lee-jungmin-private-demo",
+    "status": "draft",
+    "isPublished": false,
+    "publishedAt": null,
+    "expiresAt": "2026-06-30T23:59:59+09:00",
+    "deceasedName": "이정민",
+    "deceasedPhoto": "/mock-assets/images/deceased-lee-jungmin.svg",
+    "birthDate": "1955-10-04",
+    "deathDate": "2026-05-17T05:20:00+09:00",
+    "ageText": "향년 70세",
+    "chiefMourner": "이수아",
+    "familyList": [
+      { "relation": "배우자", "name": "최명호" },
+      { "relation": "딸", "name": "이수아" },
+      { "relation": "아들", "name": "이준호" }
+    ],
+    "obituaryText": "이정민 님께서 가족의 배웅 속에 평안히 잠드셨습니다. 본 데이터는 비공개 부고와 필수값 누락 상태를 점검하기 위한 MVP 테스트용입니다.",
+    "funeralHome": "가온메디컬 장례문화원",
+    "funeralHall": "3층 백합실",
+    "funeralAddress": "경기도 성남시 분당구 가온대로 18",
+    "funeralLat": 37.382714,
+    "funeralLng": 127.118982,
+    "shroudingAt": null,
+    "visitation": {
+      "startsAt": "2026-05-18T13:00:00+09:00",
+      "endsAt": "2026-05-20T06:00:00+09:00",
+      "note": "가족장으로 조용히 진행됩니다."
+    },
+    "processionAt": "2026-05-20T06:30:00+09:00",
+    "burialPlace": null,
+    "accounts": [
+      {
+        "id": "acct_lee_001",
+        "bank": "데모은행",
+        "holder": "이수아",
+        "number": "000-2026-0517-01",
+        "relation": "딸",
+        "displayMode": "tapToReveal"
+      }
+    ],
+    "guestbookPolicy": {
+      "requiresApproval": true,
+      "maxMessageLength": 300,
+      "allowAnonymous": false
+    },
+    "privateMessage": {
+      "label": "가족에게 남긴 글",
+      "plainPasswordForLocalTest": "jungmin-family-1010",
+      "passwordHashPlaceholder": "$2b$12$replace.with.real.hash.before.runtime",
+      "content": "수아와 준호에게. 각자의 속도로 살아가되, 서로에게 너무 늦지 않게 연락해주면 좋겠습니다. 오래 남길 말은 고맙다는 말뿐입니다.",
+      "encryptedContentPlaceholder": "replace-with-aes-gcm-ciphertext"
+    },
+    "share": {
+      "title": "이정민 님 부고",
+      "description": "비공개 상태 테스트용 부고입니다.",
+      "ogImage": "/mock-assets/images/og-lee-jungmin.svg"
+    },
+    "printImage": null,
+    "createdAt": "2026-05-19T10:20:00+09:00",
+    "updatedAt": "2026-05-19T10:20:00+09:00"
+  }
+]
+

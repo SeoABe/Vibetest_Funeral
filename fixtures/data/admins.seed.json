@@ -1,0 +1,12 @@
+[
+  {
+    "id": "admin_mvp_001",
+    "email": "admin@example.test",
+    "displayName": "정유진",
+    "role": "owner",
+    "plainPasswordForLocalTest": "MvpTest!2026",
+    "passwordHashPlaceholder": "$2b$12$replace.with.real.hash.before.runtime",
+    "notes": "MVP 로컬 테스트 전용 계정. 실제 운영 사용 금지."
+  }
+]
+

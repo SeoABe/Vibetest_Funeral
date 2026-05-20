@@ -1,0 +1,55 @@
+{
+  "basePublicPath": "/mock-assets/images",
+  "images": [
+    {
+      "id": "deceased_kim_haru",
+      "type": "deceasedPortrait",
+      "path": "/mock-assets/images/deceased-kim-haru.svg",
+      "source": "fictional-svg-placeholder",
+      "description": "김하루 부고 테스트용 비실사 추모 이미지"
+    },
+    {
+      "id": "deceased_lee_jungmin",
+      "type": "deceasedPortrait",
+      "path": "/mock-assets/images/deceased-lee-jungmin.svg",
+      "source": "fictional-svg-placeholder",
+      "description": "이정민 부고 테스트용 비실사 추모 이미지"
+    },
+    {
+      "id": "default_memorial",
+      "type": "fallback",
+      "path": "/mock-assets/images/default-memorial.svg",
+      "source": "fictional-svg-placeholder",
+      "description": "고인 사진이 없을 때 사용하는 기본 추모 이미지"
+    },
+    {
+      "id": "map_placeholder",
+      "type": "mapPlaceholder",
+      "path": "/mock-assets/images/funeral-home-map-placeholder.svg",
+      "source": "fictional-svg-placeholder",
+      "description": "카카오맵 SDK 연동 전 위치 섹션 테스트 이미지"
+    },
+    {
+      "id": "og_kim_haru",
+      "type": "ogImage",
+      "path": "/mock-assets/images/og-kim-haru.svg",
+      "source": "fictional-svg-placeholder",
+      "description": "김하루 부고 공유 미리보기 이미지"
+    },
+    {
+      "id": "og_lee_jungmin",
+      "type": "ogImage",
+      "path": "/mock-assets/images/og-lee-jungmin.svg",
+      "source": "fictional-svg-placeholder",
+      "description": "이정민 부고 공유 미리보기 이미지"
+    },
+    {
+      "id": "print_kim_haru",
+      "type": "printObituary",
+      "path": "/mock-assets/images/print-obituary-kim-haru.svg",
+      "source": "fictional-svg-placeholder",
+      "description": "인쇄용 부고 이미지 생성 기능 테스트용"
+    }
+  ]
+}
+

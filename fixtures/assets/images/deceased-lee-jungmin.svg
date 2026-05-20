@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">이정민 테스트용 추모 이미지</title>
+  <desc id="desc">실존 인물이 아닌 MVP 테스트용 추모 카드형 인물 플레이스홀더</desc>
+  <rect width="900" height="1200" fill="#1a1a1a"/>
+  <rect x="56" y="56" width="788" height="1088" rx="28" fill="#20252a" stroke="#b7c0bd" stroke-width="3"/>
+  <circle cx="450" cy="395" r="168" fill="#353d42"/>
+  <circle cx="450" cy="330" r="90" fill="#d3c3af"/>
+  <path d="M292 760c30-112 106-181 158-181s128 69 158 181" fill="#d3c3af"/>
+  <path d="M253 815h394c48 0 86 38 86 86v64H167v-64c0-48 38-86 86-86Z" fill="#45545b"/>
+  <path d="M188 230c102-44 178-36 255 24" fill="none" stroke="#c9a96e" stroke-width="5" opacity=".45"/>
+  <path d="M697 240c-58 44-92 101-101 172" fill="none" stroke="#c9a96e" stroke-width="5" opacity=".45"/>
+  <text x="450" y="1010" text-anchor="middle" font-family="serif" font-size="54" fill="#f5f0e8">이정민</text>
+  <text x="450" y="1072" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#c9a96e">1955.10.04 - 2026.05.17</text>
+</svg>
+
