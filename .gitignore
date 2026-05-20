@@ -41,3 +41,6 @@ yarn-error.log*
 next-env.d.ts
 
 /app/generated/prisma
+
+# 인수인계 문서 (민감 정보 포함 — 절대 커밋 금지)
+HANDOFF.md
